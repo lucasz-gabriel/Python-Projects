@@ -1,34 +1,33 @@
-# 🐍 Projetos em Python
+# 🐍 Python Practice Projects
 
-Repositório com dois projetos feitos em Python puro, criados para praticar lógica de programação.
+A collection of small command-line projects made in pure Python, created to practice programming fundamentals.
 
-## 📁 Projetos
+## 📁 Projects
 
-1. [🔐 Cifra de César](#-cifra-de-césar)
-2. [✊✋✌️ Pedra, Papel e Tesoura](#️-pedra-papel-e-tesoura)
+1. [🔐 Caesar Cipher](#-caesar-cipher)
+2. [✊✋✌️ Rock, Paper, Scissors](#️-rock-paper-scissors)
 
 ---
 
-## 🔐 Cifra de César
+## 🔐 Caesar Cipher
 
-Simulação da **Cifra de César**, uma das primeiras técnicas de criptografia da história, em que cada letra é deslocada um número fixo de posições no alfabeto.
+A simulation of the **Caesar Cipher**, one of the earliest known encryption techniques, where each letter is shifted a fixed number of positions in the alphabet.
 
-### Funcionalidades
+### 🎮 How It Works
 
-- Criptografar (`encode`) e descriptografar (`decode`) mensagens
-- Escolha livre do número de passos (deslocamento)
-- Espaços, números e pontuação são mantidos como estão
-- Possibilidade de repetir o processo quantas vezes quiser sem reiniciar o programa
+1. Choose whether you want to `encode` or `decode` a message.
+2. Type your message.
+3. Choose how many steps (shift) to apply.
+4. The program prints the result and asks if you want to continue.
 
-### Conceitos praticados
+### Features
 
-- Listas e o método `.index()`
-- Laços `for` e `while`
-- Funções com parâmetros nomeados
-- Operador módulo (`%`) para "dar a volta" no alfabeto
-- Entrada de dados com `input()`
+- Encode and decode messages
+- Custom shift value
+- Spaces, numbers, and punctuation are kept unchanged
+- Run as many times as you want without restarting the program
 
-### Exemplo de uso
+### Example
 
 ```
 Digite encode para criptografar e decode para descriptografar
@@ -36,51 +35,75 @@ encode
 Qual a sua mensagem para encode?ola mundo
 Quantos passos voce quer dar na criptografia?3
 Ta aqui a sua encode message = rod pxqgr
-yes-continuar, no-parar
 ```
+
+### Limitations
+
+- Only works with letters from `a` to `z` (no accents)
+- The output is always lowercase
+
+### 📚 Concepts Practiced
+
+- Lists and the `.index()` method
+- `for` and `while` loops
+- Functions with keyword arguments
+- The modulo operator (`%`) to wrap around the alphabet
+- User input with `input()`
 
 ---
 
-## ✊✋✌️ Pedra, Papel e Tesoura
+## ✊✋✌️ Rock, Paper, Scissors
 
-Jogo de pedra, papel e tesoura no terminal, contra o computador, em 3 rodadas.
+A command-line Rock, Paper, Scissors game against the computer, played in 3 rounds.
 
-### Como jogar
+### 🎮 How to Play
 
-A cada rodada, digite o número da sua jogada:
+Each round, type the number of your move:
 
-| Número | Jogada  |
-|:------:|---------|
-| 0      | Pedra   |
-| 1      | Papel   |
-| 2      | Tesoura |
+| Number | Move     |
+|:------:|----------|
+| 0      | Rock     |
+| 1      | Paper    |
+| 2      | Scissors |
 
-O computador escolhe uma jogada aleatória e o programa mostra se você **ganhou**, **perdeu** ou **empatou**. Jogadas fora de 0 a 2 são consideradas inválidas.
+The computer picks a random move, and the program tells you whether you **won**, **lost**, or **tied**. Numbers outside the 0–2 range are treated as invalid moves.
 
-### Conceitos praticados
+### 📚 Concepts Practiced
 
-- Módulo `random`
-- Condicionais (`if` / `elif` / `else`) e operadores lógicos (`and` / `or`)
-- Laço `for` com `range()`
-- Validação de entrada
+- The `random` module
+- Conditional statements (`if`, `elif`, `else`) and logical operators (`and`, `or`)
+- `for` loops with `range()`
+- Input validation
 
 ---
 
-## 📦 Instalação
+## 🛠️ Technologies
 
-Só precisa ter o **Python 3** instalado. Não há dependências externas.
+- Python 3
+- `random` module (Rock, Paper, Scissors)
+
+## 📦 Installation
+
+You only need **Python 3** installed. There are no external dependencies.
 
 ```bash
-git clone https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git
-cd NOME-DO-REPOSITORIO
+git clone https://github.com/SEU-USUARIO/Encryption-system.git
+cd Python-Projects
 ```
 
-Ou baixe o `.zip` em **Code > Download ZIP** e extraia.
+Or download the `.zip` from **Code > Download ZIP** and extract it.
 
-## ▶️ Como executar
+## ▶️ How to Run
 
 ```bash
-Python "CAESAR CIPHER.py"
+python "Python CAESAR CIPHER.py"
 python "Python GAME.py"
 ```
 
+## 💡 About the Project
+
+These are some of my Python practice projects, created while learning programming fundamentals and experimenting with basic logic.
+
+## 👨‍💻 Author
+
+**Lucas Gabriel** · [GitHub](https://github.com/lucasz-gabriel)
